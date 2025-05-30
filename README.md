@@ -1,5 +1,5 @@
 # calling_convention_cheat_sheet
-oh my god i am so tired of looking it up all the time, thank god chromium made a cheetsheet lmao 
+oh my god i am so tired of looking it up all the time, thank god chromium made a cheetsheet lmao <br>
 also system call numbers for 4 arch's below: [ty chromium](https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md#x86-32_bit)
 
 <img width="583" alt="Screenshot 2025-05-30 at 8 59 56 AM" src="https://github.com/user-attachments/assets/e6eb6944-887c-4777-8961-3aca7940e24c" />
