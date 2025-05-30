@@ -16,3 +16,6 @@ also system call numbers for 4 arch's below: [ty chromium](https://chromium.goog
     - system call: `int 0x80` im not sure if this best practice?
 - x64 (amd64): first 6 registers, then rest on the stack
     - system call: `syscall` 
+
+### ABI explained
+- https://uvdn7.github.io/abi/ 
