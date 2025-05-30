@@ -6,7 +6,7 @@ also system call numbers for 4 arch's below: [ty chromium](https://chromium.goog
 
 - arm 32: r0-r3, then rest pushed on stack
     - system call (enter kernel mode): `svc 0`, where value after svc is ignored by kernel
-    - ```
+```
       .global _start
 
 .text
