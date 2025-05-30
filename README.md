@@ -1,6 +1,6 @@
 # calling_convention_cheat_sheet
 oh my god i am so tired of looking it up all the time, thank god chromium made a cheetsheet lmao <br>
-also system call numbers for 4 arch's below: [ty chromium](https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md#x86-32_bit)
+also system call numbers for 4 arch's below: [ty chromium](https://chromium.googlesource.com/chromiumos/docs/+/master/constants/syscalls.md)
 
 <img width="583" alt="Screenshot 2025-05-30 at 8 59 56 AM" src="https://github.com/user-attachments/assets/e6eb6944-887c-4777-8961-3aca7940e24c" />
 
@@ -37,11 +37,11 @@ _start:
     mov     x0, #1            @ fd = 1 (stdout)
     adr     x1, msg           @ r1 = address of message
     mov     x2, #3            @ r2 = length of message
-    mov     x8, #4            @ r7 = syscall number for write
+    mov     x8, #64           @ r7 = syscall number for write
     svc     #0                @ invoke syscall
 
     @ exit program 
-    mov     x8, #1            @ syscall number for exit
+    mov     x8, #93           @ syscall number for exit
     mov     x0, #0            @ exit code = 0
     svc     #0                @ invoke syscall
 
