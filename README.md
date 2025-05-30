@@ -7,10 +7,11 @@ oh my god i am so tired of looking it up all the time, thank god chromium made a
     - system call (enter kernel mode): `svc 0`, where value after svc is ignored by kernel 
 - arm 64: x0-x7, rest pushed on stack
     - system call:  `svc 0` 
-- x86:
+- x86 (i386):
     - __stdcall & __cdecl 
       - pushed onto stack (left to right order, last argument is first)
     - __fastcall
       - ECX and EDX, rest on the stack (right to left order)
-- x64: first 6 registers, then rest on the stack
-    - system call: syscall 
+    - system call: `int 0x80` im not sure if this best practice?
+- x64 (amd64): first 6 registers, then rest on the stack
+    - system call: `syscall` 
